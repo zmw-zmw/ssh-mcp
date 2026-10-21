@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Local operator scripts and credentials never belong in the repository
+ops/
+*.pw
+.pw
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local test output
+*.log
+test/sshd-live/

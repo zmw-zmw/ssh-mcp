@@ -1,0 +1,47 @@
+{
+  "name": "ssh-mcp",
+  "version": "0.1.0",
+  "description": "Give an AI a real remote terminal window over SSH: one live PTY session per host, marker-delimited commands, bounded scrollback.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmw-zmw/ssh-mcp.git"
+  },
+  "homepage": "https://github.com/zmw-zmw/ssh-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/zmw-zmw/ssh-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ssh",
+    "terminal",
+    "pty",
+    "agent"
+  ],
+  "bin": {
+    "ssh-mcp": "src/server.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19"
+  },
+  "os": [
+    "win32",
+    "linux",
+    "darwin"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/unit.mjs",
+    "test:e2e": "node test/e2e.mjs"
+  },
+  "dependencies": {
+    "node-pty": "1.2.0-beta.15"
+  }
+}
